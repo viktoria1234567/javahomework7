@@ -19,8 +19,14 @@ public class task3{
         }
         double[] result = new double[array1.length];
         for(int i=0; i < result.length; i++){
+            volid(array2[i]);
             result[i] = array1[i]/array2[i];    
         }
         return result;
+}
+    private static void volid(int number){
+        if (number == 0){
+            throw new RuntimeException("На ноль делить нельзя");
+        }
 }
 }
